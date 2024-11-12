@@ -32,7 +32,7 @@ const BuildSchema: Schema = new Schema({
   buildTriggerId: { type: String, required: false },
   options: { type: Object, required: true },
   logUrl: { type: String, required: true },
-  substitutions: { type: Object, required: true },
+  substitutions: { type: Object, required: false },
   tags: { type: [String], required: true },
   timing: { type: Object, required: false },
   name: { type: String, required: true },

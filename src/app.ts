@@ -20,7 +20,7 @@ app.use(bodyParser.json({
   }
 }));
 
-const connectionString = process.env.DATABASE_CONNECTION_STRING;
+const connectionString = process.env.CUSTOMCONNSTR_DATABASE_CONNECTION_STRING;
 
 // MongoDB Connection
 mongoose.connect(connectionString, { dbName: process.env.DATABASE_NAME })
