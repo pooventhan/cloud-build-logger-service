@@ -29,7 +29,7 @@ const BuildSchema: Schema = new Schema({
   projectId: { type: String, required: true },
   logsBucket: { type: String, required: true },
   sourceProvenance: { type: Object, required: true },
-  buildTriggerId: { type: String, required: true },
+  buildTriggerId: { type: String, required: false },
   options: { type: Object, required: true },
   logUrl: { type: String, required: true },
   substitutions: { type: Object, required: true },
