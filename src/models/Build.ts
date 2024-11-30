@@ -35,7 +35,7 @@ const BuildSchema: Schema = new Schema({
   substitutions: { type: Object, required: false },
   tags: { type: [String], required: true },
   timing: { type: Object, required: false },
-  name: { type: String, required: true },
+  name: { type: String, required: false },
 });
 
 export default mongoose.model<IBuild>('Build', BuildSchema);
